@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #F4F4F4;
+}
+
+.content {
+    height: 100vh;
+}
