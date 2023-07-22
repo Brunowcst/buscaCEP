@@ -1,2 +1,2 @@
 # buscaCEP
-Buscados de CEP's.
+Buscador de CEP's.
