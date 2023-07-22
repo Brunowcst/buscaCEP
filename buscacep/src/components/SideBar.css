@@ -1,0 +1,8 @@
+
+.ant-menu-dark .ant-menu-item-selected {
+    background-color: #000000; 
+}
+  
+.ant-menu-dark .ant-menu-item-selected a {
+    color: #fff; 
+}
