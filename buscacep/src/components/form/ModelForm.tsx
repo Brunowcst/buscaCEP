@@ -70,18 +70,7 @@ const ModelForm: React.FC = () => {
 
   return (
     <>
-    <Space direction="vertical" style={{ width: '100%' }}>
-      {msgError && (
-        <Alert
-          className={styles.msgErro}
-          message="CEP inválido"
-          type="error"
-          showIcon
-          closable
-        />
-      )}
-      
-    </Space>
+    
     <Form
       layout='vertical'
       form={form}
@@ -129,6 +118,19 @@ const ModelForm: React.FC = () => {
       label="UF" rules={[{ required: false }]}>
         <Input placeholder='Informe a UF:'/>
       </Form.Item>
+
+      <Space direction="vertical" style={{ width: '100%' }}>
+        {msgError && (
+          <Alert
+            className={styles.msgErro}
+            message="CEP inválido"
+            type="error"
+            showIcon
+            closable
+          />
+        )}
+      
+      </Space>
 
 
       <Form.Item {...tailLayout}>
