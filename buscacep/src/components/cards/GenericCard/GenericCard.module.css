@@ -65,7 +65,7 @@
 
 @media (max-width: 745px) {
     .contentGerericCard {
-        height: 45vh;
+        height: 50vh;
         width: 30vw;
     }
 }
@@ -81,6 +81,7 @@
 @media (max-width: 500px) {
     .contentGerericCard {
         width: 40vw;
+        height: 50vh;
     }
     
     .card {
