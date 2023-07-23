@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/buscaCEP/static/css/main.4091026f.css",
-    "main.js": "/buscaCEP/static/js/main.81bc906d.js",
+    "main.css": "/buscaCEP/static/css/main.5a2a396e.css",
+    "main.js": "/buscaCEP/static/js/main.5e1d6c59.js",
     "index.html": "/buscaCEP/index.html",
-    "main.4091026f.css.map": "/buscaCEP/static/css/main.4091026f.css.map",
-    "main.81bc906d.js.map": "/buscaCEP/static/js/main.81bc906d.js.map"
+    "main.5a2a396e.css.map": "/buscaCEP/static/css/main.5a2a396e.css.map",
+    "main.5e1d6c59.js.map": "/buscaCEP/static/js/main.5e1d6c59.js.map"
   },
   "entrypoints": [
-    "static/css/main.4091026f.css",
-    "static/js/main.81bc906d.js"
+    "static/css/main.5a2a396e.css",
+    "static/js/main.5e1d6c59.js"
   ]
 }
