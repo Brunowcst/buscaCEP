@@ -12,7 +12,7 @@ function routes() {
         <Router>
             <Routes>
                 <Route element={<MainLayout/>}>
-                    <Route path='/' element={<Home/>}/>
+                    <Route path='/buscaCEP' element={<Home/>}/>
                     <Route path='/contacts' element={<Contacts/>}/>
                     <Route path='/about' element={<About/>}/>
                 </Route>
