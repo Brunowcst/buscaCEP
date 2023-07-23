@@ -68,15 +68,12 @@ const ModelForm: React.FC = () => {
     <>
     
     <Form
+      className={styles.form}
       layout='vertical'
       form={form}
       name="search-cep"
       onFinish={onSubmit}
-      style={{ 
-        minWidth: 100, 
-        width: 400,
-        paddingLeft: 20,
-        paddingRight: 20 }}
+      
     >
       <Form.Item 
       name="cep" 
