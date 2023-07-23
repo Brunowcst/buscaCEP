@@ -10,6 +10,7 @@
     justify-content: space-around;
     align-items: center;
     opacity: .9;
+    text-decoration: none;
 }
 
 .card {
@@ -17,8 +18,9 @@
 }
 
 .contentGerericCard:hover {
-   opacity: 1;
-   cursor: pointer;
+    color: black;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .contentGerericCard span {

@@ -10,7 +10,7 @@ interface PropsGenericCard {
 
 function GenericCard({icon, label, link, customClass, user} : PropsGenericCard) {
     return (
-        <div >
+        <div>
             <a href={link} target='_blank' rel='noreferrer' className={`${styles.contentGerericCard} ${styles[customClass]}`}>
                 <span>{icon}</span>
                 <h2>{label}</h2>
