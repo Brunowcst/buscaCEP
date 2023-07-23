@@ -81,38 +81,38 @@ const ModelForm: React.FC = () => {
       <Form.Item 
       name="cep" 
       label="CEP" 
-      rules={[{ required: false }]}>
-        <Input placeholder='Digite um CEP:' />
+      rules={[{ required: true, message: msg }]}>
+        <Input placeholder='Informe um CEP:' />
       </Form.Item>
 
       <Form.Item
       name="logradouro" 
       label="Logradouro" rules={[{ required: false }]}>
-        <Input/>
+        <Input placeholder='Informe o nome da rua:'/>
       </Form.Item>
 
       <Form.Item
       name="complemento" 
       label="Complemento" rules={[{ required: false }]}>
-        <Input />
+        <Input placeholder='Ex: Próximo a praça:'/>
       </Form.Item>
 
       <Form.Item
       name="bairro" 
       label="Bairro" rules={[{ required: false }]}>
-        <Input />
+        <Input placeholder='Informe o nome do bairro:'/>
       </Form.Item>
 
       <Form.Item
       name="localidade" 
       label="Localidade" rules={[{ required: false }]}>
-        <Input/>
+        <Input placeholder='Informe o nome da cidade:'/>
       </Form.Item>
 
       <Form.Item
       name="uf" 
       label="UF" rules={[{ required: false }]}>
-        <Input />
+        <Input placeholder='Informe a UF:'/>
       </Form.Item>
 
 
