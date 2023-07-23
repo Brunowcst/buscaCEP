@@ -4,6 +4,7 @@ import styles from './MainLayout.module.css'
 import SideBarMenu from '../../components/SideBar/SideBarMenu';
 
 function MainLayout() {
+  const sidebarVisible = true;
   const {Header, Content, Footer} = Layout;
 
   return (
@@ -13,7 +14,7 @@ function MainLayout() {
         <p>Busca CEP</p>
       </Header>
       <Layout>
-        <SideBarMenu/>
+        <SideBarMenu visible={sidebarVisible}/>
 
         <Content className={styles.content}>
           <Outlet/>
