@@ -1,9 +1,11 @@
 import React from 'react';
+import CustomCard from '../../components/cards/CustomCard/CustomCard';
+import styles from './Contacts.module.css';
 
 function Contacts() {
     return (
-        <div>
-            <p>Contatos</p>
+        <div className={styles.content}>
+            <CustomCard/>
         </div>
     );
 }
