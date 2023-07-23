@@ -5,3 +5,13 @@
     gap: 1rem;
     background-color: #05161a;
 }
+
+.sider {
+    display: block;
+}
+
+@media (max-width: 420px) {
+    .sider {
+        display: none;
+    }
+}
