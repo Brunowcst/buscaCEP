@@ -59,6 +59,7 @@ const CustomCard: React.FC = () => {
     <div className={styles.content}>
       <Card
         className={styles.card}
+        style={{ width: '100%' }}
         tabList={tabListNoTitle}
         activeTabKey={activeTabKey}
         onTabChange={onTab2Change}
