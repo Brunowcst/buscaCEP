@@ -1,5 +1,6 @@
-import { Button, Form, Input} from 'antd';
+import { Button, Form, Input, Alert, Space} from 'antd';
 import React, { useState, useEffect } from 'react';
+import styles from './ModelForm.module.css'
 
 
 const msg = "Por favor, preencha este campo!"
@@ -26,6 +27,7 @@ interface DadosProps {
 
 const ModelForm: React.FC = () => {
   const [dados, setDados] = useState<DadosProps>()
+  const [msgError, setMsgError] = useState(false)
   const [form] = Form.useForm();
 
   const onReset = () => {
@@ -42,12 +44,12 @@ const ModelForm: React.FC = () => {
       }
     });
     let data = await response.json();
-    if(response.status === 200) {
-      console.log("data" + data)
-      console.log('dados' + dados)
+    if(!data.erro) {
       setDados(data)
+      setMsgError(false)
     } else {
       console.log("Erro na requisição")
+      setMsgError(true)
     }
     }catch (error) {
       console.log(error)
@@ -67,6 +69,19 @@ const ModelForm: React.FC = () => {
   }, [dados]);
 
   return (
+    <>
+    <Space direction="vertical" style={{ width: '100%' }}>
+      {msgError && (
+        <Alert
+          className={styles.msgErro}
+          message="CEP inválido"
+          type="error"
+          showIcon
+          closable
+        />
+      )}
+      
+    </Space>
     <Form
       layout='vertical'
       form={form}
@@ -125,6 +140,7 @@ const ModelForm: React.FC = () => {
         </Button>
       </Form.Item>
     </Form>
+    </>
   );
 };
 
