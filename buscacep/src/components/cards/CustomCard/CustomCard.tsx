@@ -64,10 +64,10 @@ const CustomCard: React.FC = () => {
         activeTabKey={activeTabKey}
         onTabChange={onTab2Change}
       > 
-      </Card>
       <div>
           {contentListNoTitle[activeTabKey]}
       </div>
+      </Card>
     </div>
   );
 };
