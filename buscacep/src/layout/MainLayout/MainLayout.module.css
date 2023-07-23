@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #F4F4F4;
+    background-color: #072e33;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.footer {
+    background-color: #072e33;
+}
