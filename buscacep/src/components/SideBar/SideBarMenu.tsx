@@ -15,7 +15,7 @@ function SideBarMenu({ visible }: SideBarMenuProps) {
   const { Item } = Menu;
 
   const menuItems = [
-    { key: 'home', label: 'Home', route: '/', icon: <HomeOutlined /> },
+    { key: 'home', label: 'Home', route: '/buscaCEP', icon: <HomeOutlined /> },
     { key: 'contacts', label: 'Contacts', route: '/contacts', icon: <UserOutlined /> },
     { key: 'about', label: 'Sobre', route: '/about', icon: <InfoCircleOutlined /> },
   ];
