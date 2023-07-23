@@ -5,10 +5,6 @@ import styles from './ModelForm.module.css'
 
 const msg = "Por favor, preencha este campo!"
 
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-};
 
 const tailLayout = {
   wrapperCol: { 
@@ -66,7 +62,7 @@ const ModelForm: React.FC = () => {
         uf: dados.uf,
       });
     }
-  }, [dados]);
+  }, [dados, form]);
 
   return (
     <>
