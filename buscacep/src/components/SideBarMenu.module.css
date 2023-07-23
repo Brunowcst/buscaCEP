@@ -1,7 +1,0 @@
-.menu {
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #ff8052;
-}
