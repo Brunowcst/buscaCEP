@@ -1,8 +1,21 @@
+
 .msgErro {
     margin-bottom: 1rem;
 }
 
 .form {
-    width: 47vw;
+    min-width: 47vw;
+    width: 50vw;
 }
 
+.formButtons {
+    display: flex;
+    margin: auto;
+    align-self: center;
+    justify-content: center;
+}
+
+.contentButtons {
+    display: flex;
+    gap: 1rem;
+}

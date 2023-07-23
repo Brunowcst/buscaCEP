@@ -5,12 +5,11 @@ import styles from './ModelForm.module.css'
 
 const msg = "Por favor, preencha este campo!"
 
-
-const tailLayout = {
-  wrapperCol: { 
-    offset: 8, 
-    span: 16 },
-};
+// const tailLayout = {
+//   wrapperCol: { 
+//     offset: 30, 
+//     span: 16 },
+// };
 
 interface DadosProps {
   cep: string,
@@ -72,8 +71,7 @@ const ModelForm: React.FC = () => {
       layout='vertical'
       form={form}
       name="search-cep"
-      onFinish={onSubmit}
-      
+      onFinish={onSubmit} 
     >
       <Form.Item 
       name="cep" 
@@ -126,14 +124,16 @@ const ModelForm: React.FC = () => {
       </Space>
 
 
-      <Form.Item {...tailLayout}>
-        <Button type="primary" htmlType="submit">
-          Enviar
-        </Button>
-        <Button htmlType="button" onClick={onReset}>
-          Limpar
-        </Button>
-      </Form.Item>
+      <div className={styles.formButtons}>
+        <Form.Item>
+          <Button style={{backgroundColor: '#072e33'}} type="primary" htmlType="submit">
+            Enviar
+          </Button>
+          <Button htmlType="button" onClick={onReset}>
+            Limpar
+          </Button>
+        </Form.Item>
+      </div>
     </Form>
     </>
   );
