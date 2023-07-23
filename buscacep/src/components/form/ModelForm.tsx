@@ -81,7 +81,7 @@ const ModelForm: React.FC = () => {
       <Form.Item 
       name="cep" 
       label="CEP" 
-      rules={[{ required: true, message: msg }]}>
+      rules={[{ required: false }]}>
         <Input placeholder='Digite um CEP:' />
       </Form.Item>
 
