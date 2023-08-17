@@ -1,0 +1,15 @@
+.ant-card-head {
+    width: 82%;
+}
+
+@media (max-width: 424px) {
+    .ant-card-head {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .ant-card-head {
+        width: 40vw;
+    }
+}

@@ -1,0 +1,10 @@
+.content {
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    font-size: medium;
+    margin-top: 2rem;
+}
