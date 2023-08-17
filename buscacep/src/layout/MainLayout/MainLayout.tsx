@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import styles from './MainLayout.module.css'
 import SideBarMenu from '../../components/SideBar/SideBarMenu';
 import { useState } from 'react';
-import { MenuOutlined } from '@ant-design/icons';
+import { GithubOutlined, MenuOutlined } from '@ant-design/icons';
 import { SideBarMenuDrawer } from '../../components/SideBar/SideBarMenu';
 
 function MainLayout() {
@@ -15,7 +15,7 @@ function MainLayout() {
   return (
     <Layout className={styles.layout}>
       <Header className={styles.header}>
-        <div>Imagem</div>
+          <a href="https://github.com/Brunowcst" target='_blank' rel='noreferrer external'><img src="https://avatars.githubusercontent.com/u/92828890?s=400&u=9d1a4e44c7a9a72d6cad59f76822c7960f0c32d5&v=4" alt="Imagem git" /></a>
         <Button
           className={styles.menuButton}
           icon={<MenuOutlined />}
@@ -43,7 +43,14 @@ function MainLayout() {
         </Layout>
 
       </Layout>
-      <Footer className={styles.footer}>Footer</Footer>
+      <Footer className={styles.footer}>
+        <div>
+          <a href="https://github.com/Brunowcst" target='_blank' rel='noreferrer external'>
+            <GithubOutlined />
+            Brunowcst
+          </a>
+        </div>
+      </Footer>
     </Layout>
   );
 }
